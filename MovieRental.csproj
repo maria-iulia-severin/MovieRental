@@ -187,9 +187,34 @@
     <Compile Include="Migrations\202111211523516_ApplyAnnotationsToCustomerName.Designer.cs">
       <DependentUpon>202111211523516_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111211752480_MembershipTypeNameAdded.cs" />
+    <Compile Include="Migrations\202111211752480_MembershipTypeNameAdded.Designer.cs">
+      <DependentUpon>202111211752480_MembershipTypeNameAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111211754100_UpdateExistingRecords.cs" />
+    <Compile Include="Migrations\202111211754100_UpdateExistingRecords.Designer.cs">
+      <DependentUpon>202111211754100_UpdateExistingRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111211837454_CustomerBirthdate.cs" />
+    <Compile Include="Migrations\202111211837454_CustomerBirthdate.Designer.cs">
+      <DependentUpon>202111211837454_CustomerBirthdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111211914435_GenreAdded.cs" />
+    <Compile Include="Migrations\202111211914435_GenreAdded.Designer.cs">
+      <DependentUpon>202111211914435_GenreAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111211917432_InsertIntoGenres.cs" />
+    <Compile Include="Migrations\202111211917432_InsertIntoGenres.Designer.cs">
+      <DependentUpon>202111211917432_InsertIntoGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111211939556_InsertMovieData.cs" />
+    <Compile Include="Migrations\202111211939556_InsertMovieData.Designer.cs">
+      <DependentUpon>202111211939556_InsertMovieData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -261,6 +286,7 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -287,6 +313,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111211523516_ApplyAnnotationsToCustomerName.resx">
       <DependentUpon>202111211523516_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111211752480_MembershipTypeNameAdded.resx">
+      <DependentUpon>202111211752480_MembershipTypeNameAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111211754100_UpdateExistingRecords.resx">
+      <DependentUpon>202111211754100_UpdateExistingRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111211837454_CustomerBirthdate.resx">
+      <DependentUpon>202111211837454_CustomerBirthdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111211914435_GenreAdded.resx">
+      <DependentUpon>202111211914435_GenreAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111211917432_InsertIntoGenres.resx">
+      <DependentUpon>202111211917432_InsertIntoGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111211939556_InsertMovieData.resx">
+      <DependentUpon>202111211939556_InsertMovieData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

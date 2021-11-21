@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Data.Entity;
 
 namespace MovieRental.Controllers
 {
@@ -29,12 +30,13 @@ namespace MovieRental.Controllers
             //acest query este de fapt executat doar cand mergem cu foreach prin tot dbSet-ul, adica in View-ul pt Customer
             //var customers = _context.Customers;
             //daca as vrea sa execut query-ul aici, as putea sa fac: 
-            var customers = _context.Customers.ToList();
+            //metoda include imi permite sa accesez toate legaturile unui Customer cu alte tabele (de ex membershipType discount)
+            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
             return View(customers);
         }
         public ActionResult Details(int id)
         {
-            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
+            var customer = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.Id == id);
             if (customer == null)
                 return HttpNotFound();
             return View(customer);
